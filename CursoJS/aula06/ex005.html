@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos com DOM</title>
+  <style>
+    body {
+      background: rgb(68, 125, 199);
+      color: white;
+      font: normal 18pt Arial;
+    }
+  </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendoa usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <p name="teste">Teste 123456</p>
+    <p class="joao">João de Barro</p>
+
+
+
+
+    <script>
+      // Escrevendo na Tela 
+      window.document.write('Olá, Mundo!</br> </br>')
+      // Pegando a URL e escrevendo na tela
+      window.document.write(window.document.URL + '</br> </br>')
+      // criando uma variavel p1 pegando os elementos da tag p selecionando a tag p númeo [1] 0,1,2... depois escrever na tela o elemento innerText p1.innertext
+      // Pegando pelo por tag 
+      var p1 = window.document.getElementsByTagName('p')[1]
+      window.document.write(`Reescrevendo o segundo paragrafo só texto InnerText: ${p1.innerText} </br> </br>` )
+      // mudando o estilo color para azul - mudando a cor da letra para azul
+      p1.style.color = 'blue'
+      // Pegando os elementos do Body e mudando a cor de fundo
+      var corpo = window.document.body
+      corpo.style.background = 'black'
+      // Imprimir o p1 com html com todos os parametros de html que tiver lá exemplo o strong no caso do exemplo
+      window.document.write(`Reescrevendo o segundo paragrafo pegando configuração HTML que tiver InnerHTML: ${p1.innerHTML} </br> </br>` )
+      // selecionando por ID do Objeto
+      var d = window.document.getElementById('msg')
+      d.style.background = 'green'
+      d.innerText = 'Estou Aguardando...'
+      // Selecionando pelo Name do Objeto
+      var pname = window.document.getElementsByName('teste')[0]
+      window.document.write(`</br> </br> imprimindo o conteudo de window.document.getElementsByName('teste')----> ${pname.innerHTML}`)
+      // Selecionando pela Class do Objeto
+      var pclass = window.document.getElementsByClassName('joao')[0] //pegando o nome da classe eu preciso especificar qual deles é, pois nome da classe pode ser usar varias vezes diferente do ID que só pode ser usado uma Vez. o Name também pode ser usado vários vezes e precisa especificar qual deve pegar.
+      window.document.write(`</br> </br> window.document.getElementsByClassName('joao')---> ${pclass.innerHTML}`)
+      // USANDO QUERY SELECTOR ----- SELETOR
+      //window.documet.write('</br> </br> USANDO QUERY SELECTOR - SELETOR')
+      // Pegando os elementos da div com id nome usando query selector
+      var selectorId = window.document.querySelector('div#msg')
+      window.document.write(`</br> </br> window.document.querySelector('div#msg')-----> ${selectorId.innerHTML}`)
+      // Pegando os elementos da div com class sobrenome usando query selector 
+       var selectorClass = window.document.querySelector('p.joao')
+       window.document.write(`</br> </br> window.document.querySelector('p.joao')-----> ${selectorClass.innerHTML}`)
+
+    </script>
+</body>
+</html>
