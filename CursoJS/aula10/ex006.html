@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    div#area {
+
+      /* background: rgb(42, 139, 42); */
+      background: darkgray;
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+
+    }
+  </style>
+  <title>Eventos DOM</title>
+</head>
+<body>
+  <div id="area">
+    Intereja...
+  </div>
+
+  <script>
+    // Pegar os atributor de uma DIV e colocar na variavel a para que possamos manipulalos
+
+    // var a = window.document.getElementById("area")
+    // usando getElementById ou querySelector
+    var a = document.querySelector('#area')
+
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+    
+    function clicar(){
+     a.style.background='rgb(42, 139, 42)'
+     a.innerText = 'Clicou!!!'
+    }
+
+    function entrar(){
+     a.style.background='orange'
+     a.innerText = 'Entrou!'
+    }
+
+    function sair(){
+    a.style.background='yellow'
+     a.innerText = 'Saiu!'
+    }
+  
+  </script>
+</body>
+</html>
