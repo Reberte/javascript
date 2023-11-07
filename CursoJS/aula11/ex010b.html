@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Você é Brasileiro?</title>
+</head>
+<body>
+  <h1>Você é Brasileiro ou Estrangeiro?</h1>
+  <input type="text" name="pais" id="pais" placeholder="Qual seu pais de origem?">
+  <input type="button" value="verificar" onclick="consultaPais()">
+  <div id="res">Aguardando...</div>
+  <script>
+    function consultaPais() {
+
+      var paisOri = window.document.querySelector('input#pais').value
+      var res = window.document.querySelector('div#res')
+      res.innerHTML = `<p>Vivendo em ${paisOri}</p>`
+      if (paisOri != 'Brasil') {
+        res.innerHTML += `<p>Você é Estrangeiro!</p>`
+      } else {
+        res.innerHTML += `<p>Você é Brasileiro!!!!</p>`
+      }
+      
+    }
+  </script>
+</body>
+</html>
+
+<!-- 
+
+  var pais = 'França'
+console.log(`Vivendo em ${pais}`)
+if (pais != 'Brasil') {
+  console.log(`Você é Estrangeiro!`)
+} else {
+  console.log(`Você é Brasileiro!`)
+}
+ -->
