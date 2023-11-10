@@ -4,6 +4,8 @@ while (c <= 6){
   c++
 }
 
+
+//DO WHILE
 var b = 1
 do {
   console.log(`Processo ${b}`)
