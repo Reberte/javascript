@@ -3,20 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super Contador</title>
+  <title>Tabuada</title>
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
   <header>
-    <h1>Vamos Contar</h1>
+    <h1></h1>
   </header>
   <section>
     <div>
-      <label for="inicio">Inicio:</label>
-      <input type="number" name="inicio" id="inicio">
-      
+      <p>
+        <label for="valor">Valor:</label>
+        <input type="number" name="valor" id="valor" required>
+        <input type="button" value="Gerar Tabuada" onclick="calcular()">
+      </p>
     </div>
-    <div>Impossível Confiar</div>
+    <div id="res">
+      <select name="tabuada" id="tabuada" size="11"> 
+
+      </select>
+    </div>
   </section>
   <footer>
     <p>&copy; MarcosReberte</p>
