@@ -9,8 +9,9 @@ function incluir() {
 
   if (valor.value.length == 0) {
     window.alert('Por favor, digite um número!')
-  } else {
-      if (banco.indexOf(valor.value) !== -1 ) {
+  } else if (valor.value < 1 || valor.value > 100){
+    window.alert(`O Valor ${valor.value} digitado é invalido, digite um valor entre 1 a 100`)
+  } else if (banco.indexOf(valor.value) !== -1 ) {
         window.alert(`O valor ${valor.value} já está cadastrado!`)
       } else {
         let item = document.createElement('option')
@@ -20,7 +21,7 @@ function incluir() {
         console.log(banco)
         tab.appendChild(item)
       }
-   }
+   
 }
 
 function finalizar() {
@@ -35,8 +36,7 @@ function finalizar() {
   <p>O maior valor informado foi ${maiorval()}.</p>
   <p>O menor valor informado foi ${menorval()}.</p>
   <p>Somando todos os valores, temos ${soma()}.</p>
-  <p>A média dos valores digitadosé ${media()}</p>
-                  `
+  <p>A média dos valores digitados é ${media()}.</p>`
 
 
   //FUNCAO TOTAL CADASTRADO
@@ -61,7 +61,7 @@ function finalizar() {
   function menorval(){
     let menor = banco[0] 
     for(let pos in banco){
-      console.log(`Maior ${menor} é menor que ${banco[pos]} index ${pos}`)
+      // console.log(`Maior ${menor} é menor que ${banco[pos]} index ${pos}`)
 
       if (menor > banco[pos]){
         menor = banco[pos]
@@ -71,17 +71,20 @@ function finalizar() {
   }
 
   function soma(){
-    let tot 
+    let tot = 0
     for(let pos in banco){
-      tot =+ Number(banco[pos])
+      tot += Number(banco[pos])
+      // console.log(`Tot ${tot}`)
+      // console.log(`Banco[pos] ${banco[pos]} pos${pos}`)
     }
 
     return tot
   }
 
   function media(){
-    let tot = Number(soma())
-    return tot/2
+    let qtd = Number(totcad())
+    let totsoma = Number(soma())
+    return totsoma/qtd
   }
 
 
