@@ -59,10 +59,10 @@ function finalizar() {
 
     res.innerHTML = ''
     res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados. </p>`
-    res.innerHTML += `<pO Maior valor informado foi ${maior}. </p>`
-    res.innerHTML += `<pO Menor valor informado foi ${menor}. </p>`
-    res.innerHTML += `<pSomando todos os valores, temos ${soma}. </p>`
-    res.innerHTML += `<pA media dos valores digitados é ${media}. </p>`
+    res.innerHTML += `<p>O Maior valor informado foi ${maior}. </p>`
+    res.innerHTML += `<p>O Menor valor informado foi ${menor}. </p>`
+    res.innerHTML += `<p>Somando todos os valores, temos ${soma}. </p>`
+    res.innerHTML += `<p>A media dos valores digitados é ${media}. </p>`
   }
 
 }
