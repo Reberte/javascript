@@ -1,0 +1,3 @@
+Na conversão de valor crir um nova variavel onde vai armazenar o nome da pessoa que está fazendo a conversão e exibir o nome dela no alert quando for exibir o valor convertido 
+
+Olá fulano o valor convertido é R$ 120,50.

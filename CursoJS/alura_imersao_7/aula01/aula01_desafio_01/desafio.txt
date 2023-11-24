@@ -1,0 +1,9 @@
+Converter uma moeda real, Euro, Real, Dolar para uma Cripto moeda.
+
+Vou utilizar o Real e converter para o valor da criptomoeda
+
+Bitcoin BTC 1 = R$ 182.897,44
+Bitcoin BTC 1 = $ 37.343,70
+
+Ether ETH 1 = R$ 10.182,09
+Ether ETH 1 = $ 2.039,46
