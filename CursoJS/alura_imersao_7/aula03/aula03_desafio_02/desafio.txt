@@ -1,0 +1,2 @@
+Criar uma segundo lista 'Array' para armazenar o nome dos filmes
+depois devemos clocar o nome dos filmes abaixo da imagem de cada imagem do filme

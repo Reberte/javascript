@@ -1,0 +1,3 @@
+Usar o exemplo do mentalista
+Se a pessoa errou, informar que o número digitado é maior ou menor do que a que ela digitou. 
+informar no mesmo alert ou em um novo a mensagem "Você já deu x chutes"

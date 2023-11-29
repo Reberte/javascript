@@ -1,0 +1,2 @@
+O número sorteador aleatorio não pode ser zero e a pessoa só pode digitar do número de 1 a 1000
+

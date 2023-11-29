@@ -1,0 +1,1 @@
+Verificar se no final do link da imagem, ela terminar com .jpg
