@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imersão Dev</title>
+  <title>Qual seu filme favorito?</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+<body>
   <div class="container">
     <h1 class="page-title">
-      Reberteflix
+      Aluraflix
     </h1>
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
     <p class="page-subtitle">
@@ -17,13 +19,13 @@
     </p>
     <div class="form-wrapper">
       <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
-      <input type="text" name="trailer" id="trailer" placeholder="Insira o endereço do trailer">
-
+      <input type="text" id="trailer" name="filme" placeholder="Insira endereço do trailer">
+      <p id="mensagemDeErro"></p>
       <button onClick="adicionarFilme()">Adicionar Filme</button>
     </div>
   </div>
   <div id="listaFilmes"></div>
-  <a href="github.com/reberte" target="_blank">
+  <a href="https://alura.com.br/" target="_blank">
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
   </a>
   <script src="script.js"></script>
